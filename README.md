@@ -1,0 +1,1 @@
+# Sequalized-Web-Shop
