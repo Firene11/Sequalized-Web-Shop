@@ -33,8 +33,3 @@ module.exports = {
   ProductTag,
 };
 
-
-/*
-
-Tag belongs to many Product models.
-*/
