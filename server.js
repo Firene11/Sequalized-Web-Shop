@@ -13,7 +13,12 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(routes);
 
+app.get('/', (req, res) => {
+  console.log("category routes")
+  res.send('Category Routes')
+});
+
 // sync sequelize models to the database, then turn on the server
 sequelize.sync({ force: false }).then(() => {
-  console.log(`App listening on port ${PORT}!`);
+  app.listen(PORT, () => console.log(`Now listening to PORT:!${PORT}`));
 });
