@@ -23,7 +23,7 @@ router.get("/:id", async (req, res) => {
       include: Product,
     });
     !category
-      ? res.status(404).json({ message: "Oops! Category not found." })
+      ? res.status(404).json({ message: "Oops! I did it again. I played with your heart, got lost in the route, because there is no category!" })
       : res.json(category);
   } catch (err) {
     res.status(500).json(err);
