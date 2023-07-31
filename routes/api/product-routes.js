@@ -17,12 +17,22 @@ router.get("/", async (req, res) => {
 });
 
 // Gets one product by id
-router.get('/:id', (req, res) => {
-
+router.get("/:id", async (req, res) => {
+  try {
+    const product = await Product.findByPk(req.params.id, {
+      include: [{ model: Category, }, { model: Tag, through: ProductTag, }],
+    });
+    res.json(product);
+  } catch (err) {
+    res.status(500).json({ message: "No product found!", error: err });
+  }
 });
 
-// create new product
-router.post('/', (req, res) => {
+// Creates a new product
+router.post('/', async (req, res) => {
+  try {
+    const newProduct = await Product.create(req.body);
+  }
   /* req.body should look like this...
     {
       product_name: "Basketball",
@@ -30,6 +40,15 @@ router.post('/', (req, res) => {
       stock: 3,
       tagIds: [1, 2, 3, 4]
     }
+
+    router.post('/', async (req, res) => {
+  try {
+    const userData = await User.create(req.body);
+    res.status(200).json(userData);
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
   */
   Product.create(req.body)
     .then((product) => {
