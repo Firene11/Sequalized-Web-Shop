@@ -29,10 +29,7 @@ router.get("/:id", async (req, res) => {
 });
 
 // Creates a new product
-router.post('/', async (req, res) => {
-  try {
-    const newProduct = await Product.create(req.body);
-  }
+router.post('/', (req, res) => {
   /* req.body should look like this...
     {
       product_name: "Basketball",
@@ -40,15 +37,6 @@ router.post('/', async (req, res) => {
       stock: 3,
       tagIds: [1, 2, 3, 4]
     }
-
-    router.post('/', async (req, res) => {
-  try {
-    const userData = await User.create(req.body);
-    res.status(200).json(userData);
-  } catch (err) {
-    res.status(400).json(err);
-  }
-});
   */
   Product.create(req.body)
     .then((product) => {
