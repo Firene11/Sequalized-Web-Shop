@@ -27,13 +27,13 @@ From the command line in your terminal run the commmand:
 
 When you enter the command to invoke the application, the server is started and the Sequelize models are synced to the MySQL database.
 
-When upi open API GET routes in Insomnia Core for categories, products, or tags, Then the data for each of these routes is displayed in a formatted JSON.
+**node server.js** to listen to the PORT
+
+When you open API GET routes in Insomnia Core for categories, products, or tags, Then the data for each of these routes is displayed in a formatted JSON.
 
 When you test API POST, PUT, and DELETE routes in Insomnia Core, you are able to successfully create, update, and delete data in the database.
 
-
-
-**node server.js** to listen to the PORT
+**https://insomnia.rest/**
 
 Choose an option from the list to view specific information from the employee database. Once you view the data, you are immediately able to choose another option. 
 
@@ -41,7 +41,7 @@ Choose an option from the list to view specific information from the employee da
 
 **Watch this VIDEO to see how the app runs!**
 
-https://drive.google.com/file/d/1bwY-7LThdC4KT6zDUjcZ8zR8kpd0IgJX/view
+https://drive.google.com/file/d/1WfkFoGu-8o8E5m4yCyRcSVpQEscQN3mi/view
 
 ## Screenshots
 
@@ -56,33 +56,11 @@ https://drive.google.com/file/d/1bwY-7LThdC4KT6zDUjcZ8zR8kpd0IgJX/view
 ![Application](Images/sc9.jpg) 
 
 
-
 ## Credits
 n/a
 
 ## Tests
 
+https://insomnia.rest/
 
 ## Acceptance Criteria
-
-GIVEN a functional Express.js API
-
-WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
-
-THEN I am able to connect to a database using Sequelize
-
-WHEN I enter schema and seed commands
-
-THEN a development database is created and is seeded with test data
-
-WHEN I enter the command to invoke the application
-
-THEN my server is started and the Sequelize models are synced to the MySQL database
-
-WHEN I open API GET routes in Insomnia Core for categories, products, or tags
-
-THEN the data for each of these routes is displayed in a formatted JSON
-
-WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
-
-THEN I am able to successfully create, update, and delete data in my database
