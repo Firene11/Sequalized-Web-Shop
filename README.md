@@ -45,15 +45,10 @@ https://drive.google.com/file/d/1WfkFoGu-8o8E5m4yCyRcSVpQEscQN3mi/view
 
 ## Screenshots
 
-![Application](Images/sc1.jpg) 
-![Application](Images/sc2.jpg) 
-![Application](Images/sc3.jpg) 
-![Application](Images/sc4.jpg) 
-![Application](Images/sc5.jpg) 
-![Application](Images/sc6.jpg) 
-![Application](Images/sc7.jpg) 
-![Application](Images/sc8.jpg) 
-![Application](Images/sc9.jpg) 
+![Application](Images/get.jpg) 
+![Application](Images/post.jpg) 
+![Application](Images/put.jpg) 
+![Application](Images/delete.jpg) 
 
 
 ## Credits
