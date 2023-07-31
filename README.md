@@ -57,5 +57,3 @@ n/a
 ## Tests
 
 https://insomnia.rest/
-
-## Acceptance Criteria
